@@ -20,6 +20,6 @@ jobs:
           node-version: '14'
       
       - name: Install dependencies
-        run: |
-          yarn install --frozen-lockfile
-          yarn test
+        run: yarn install --frozen-lockfile
+      - name: Run yarn test
+        run: yarn test
