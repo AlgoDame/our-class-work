@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
     "migrate": "ts-node node_modules/.bin/node-pg-migrate --migrations-dir ./src/migrations -j ts",
-    "test": "jest __rootDir ./dist"
+    "test": "tsc && jest __rootDir ./dist"
   },
   "jest": {
     "testEnvironment": "node"
